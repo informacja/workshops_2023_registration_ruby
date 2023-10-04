@@ -1,5 +1,9 @@
 ## Zadania do realizacji
 
+Pierwszy test przechodzi :D
+<img width="580" alt="image" src="https://github.com/informacja/workshops_2023_registration_ruby/assets/22752828/fadde3ae-a60f-45fd-b6cf-0684aa964eb2">
+
+
 ## 1. Policz elementy w tabeli
 
 ### Założenia
