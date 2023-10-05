@@ -22,11 +22,34 @@ class ValidatePassword
     end
      
     def check_valid_password
-        has_big_letter
-        return !@errors
+        # correct_length
+        has_big_letter        
+        has_small_letter
+        return not(@errors)
+    end
+
+    def correct_length
+        l = @data.length
+        if l < 6 
+            @errors = true  
+        end
+        if l > 26  
+            @errors = true 
+        end
     end
 
     def has_big_letter
-        /[[:upper:]]/.match(@data) unless @errors = true
+        unless /[[:upper:]]/.match(@data) 
+             @errors = true
+        end
     end
+
+    def has_small_letter
+        unless /[[:lower:]]/.match(@data) 
+             @errors = true
+        end
+    end
+
+    
+
 end
